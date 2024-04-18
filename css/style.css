@@ -31,6 +31,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+
 @media print {
   *,
   *:before,
@@ -7131,9 +7133,9 @@ p.ceb-single {
   text-align: right;
 }
 .sliderv2 {
-  background: url('../images/uploads/slider-bg2.jpg') no-repeat;
+  background: none;
   padding-bottom: 0;
-  padding-top: 180px;
+  padding-top: 100px;
   overflow: hidden;
 }
 .sliderv2 .movie-item .title-in {
@@ -8015,7 +8017,8 @@ header#header-light {
   background-color: #fff;
 }
 header#header-light .navbar-default {
-  padding: 15px 0;
+  padding: 1px 4px;
+
 }
 header#header-light .navbar-default .navbar-nav li:first-child a {
   color: #020d18;
