@@ -5760,7 +5760,7 @@ ul {
 }
 /*movie single hero*/
 .mv-single-hero {
-  background: url('../images/uploads/hero-bg.jpg') no-repeat;
+  background-color: #0f2133;
   height: 598px;
 }
 /*series single hero*/
@@ -6481,12 +6481,13 @@ ul {
   color: #dcf836;
 }
 .movie-single .sticky-sb {
-  position: relative;
+  /* position: absolute; */
   top: 0px;
+  
 }
 @media (max-width: 991px) {
   .movie-single .sticky-sb {
-    max-width: 400px;
+    max-width: 000px;
     margin: 0 auto 60px;
   }
 }
