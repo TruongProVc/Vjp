@@ -8,7 +8,7 @@
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html lang="en" class="no-js">
 
-<!-- moviesingle_light16:30-->
+<!-- userprofile_light16:31-->
 <head>
 	<!-- Basic need -->
 	<title>Open Pediatrics</title>
@@ -27,12 +27,85 @@
 	<!-- CSS files -->
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/style.css">
-
+	<!-- CSS files -->
+	<link
+	rel="stylesheet"
+	href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+  />
 </head>
+<style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+	.input-box {
+	  position: relative;
+	  width: 100%;
+	  max-width: 60px;
+	  height: 55px;
+	  margin: 0 50px;
+	  background-color: #f5f5f5;
+	  border-radius: 6px;
+	  transition: all 0.5s ease-in-out;
+	  float: right;
+	  
+	}
+	.input-box.open {
+	  max-width: 350px;
+	}
+	.input-box input {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  font-size: 16px;
+	  font-weight: 400;
+	  color: #333;
+	  padding: 0 15px;
+	  border: none;
+	  border-radius: 1px;
+	  outline: none;
+	  transition: all 0.5s ease-in-out;
+	}
+	.input-box.open input {
+	  padding: 0 15px 0 65px;
+	}
+	
+	.input-box .search {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 60px;
+	  height: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  background-color: #e4eaf0;
+	  /* border-radius: 6px; */
+	  cursor: pointer;
+	}
+	.search .search-icon {
+	  font-size: 30px;
+	  color: #1c1c1c;
+	}
+	.input-box .close-icon {
+	  position: absolute;
+	  top: 50%;
+	  right: -45px;
+	  font-size: 30px;
+	  color: #1c1c1c;
+	  padding: 5px;
+	  transform: translateY(-50%);
+	  transition: all 0.5s ease-in-out;
+	  cursor: pointer;
+	  pointer-events: none;
+	  opacity: 0;
+	}
+	.input-box.open .close-icon {
+	  transform: translateY(-50%) rotate(180deg);
+	  pointer-events: auto;
+	  opacity: 1;
+	}
+	</style>
 <body>
 <!--preloading-->
 <div id="preloader">
-    <img class="logo" src="images/logo1.png" alt="" width="119" height="58">
+    <img class="logo" src="images/uploads/2.png (1).png" alt="" width="119" height="58">
     <div id="status">
         <span></span>
         <span></span>
@@ -193,177 +266,115 @@
 	    </nav>
 	    
 	    <!-- top search form -->
-	    <div class="top-search">
-	    
+	    <div class="top-search">	
 			<input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
 	    </div>
 	</div>
 </header>
 <!-- END | Header -->
 
-    	<div class="buster-light">
-<div class="hero mv-single-hero">
+<div class="hero common-hero">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<!-- <h1> movie listing - list</h1>
-				<ul class="breadcumb">
-					<li class="active"><a href="#">Home</a></li>
-					<li> <span class="ion-ios-arrow-right"></span> movie listing</li>
-				</ul> -->
+				<div class="hero-ct">
+					<h1> LỊCH SỬ ĐĂNG NHẬP</h1>
+					<ul class="breadcumb">
+						<li class="active"><a href="#">TRANG CHỦ</a></li>
+						<li> <span class="ion-ios-arrow-right"></span> LỊCH SỬ ĐĂNG NHẬP</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="page-single movie-single movie_single">
+		<div class="buster-light">
+<div class="page-single">
 	<div class="container">
-		<div class="row ipad-width2">
-			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="movie-img sticky-sb">
-					<img src="images/uploads/movie-single.jpg" alt="">
-					<div class="movie-btn">	
-						<div class="btn-transform transform-vertical red">
-							<div><a href="#" class="item item-1 redbtn"> <i class="ion-play"></i> XEM TRAILER</a></div>
-							<div><a href="https://www.youtube.com/embed/o-0hcF97wy0" class="item item-2 redbtn fancybox-media hvr-grow"><i class="ion-play"></i></a></div>
-						</div>
-						<div class="btn-transform transform-vertical">
-							<div><a href="#" class="item item-1 yellowbtn"> <i class="ion-card"></i> MUA VÉ</a></div>
-							<div><a href="#" class="item item-2 yellowbtn"><i class="ion-card"></i></a></div>
-						</div>
+		<div class="row ipad-width">
+			<div class="col-md-3 col-sm-12 col-xs-12">
+				<div class="user-information">
+					<div class="user-img">
+						<a href="#"><img src="images/uploads/user-img.png" alt=""><br></a>
+					</div>
+					<div class="user-fav">
+						<p>Chi tiết tài khoản</p>
+						<ul>
+							<li  class="active"><a href="userprofile_light.html">thông tin</a></li>		
+							<li  class="active"><a href="userhistory_light.html">lịch sử đăng nhập</a></li>		
+							<li  class="active"><a href="userhistoryticket_light.html">lịch sử mua vé</a></li>		
+
+						</ul>
+					</div>
+					<div class="user-fav">
+						<p>Khác</p>
+						<ul>
+							<li><a href="changepass.html">Thay đổi mật khẩu </a></li>
+							<li><a href="#">Đăng xuất</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-8 col-sm-12 col-xs-12">
-				<div class="movie-single-ct main-content">
-					<h1 class="bd-hd">Skyfall: Quantum of Spectre <span>2015</span></h1>
-					<div class="social-btn">
-						<div class="hover-bnt">
-							
-						</div>		
-					</div>
-					<div class="movie-rate">
-						<div class="rate">
-							<i class="ion-android-star"></i>
-							<p><span>8.1</span> /10<br>
-							</p>
+			<div class="col-md-9 col-sm-9 col-xs-12">
+				<div class="form-style-1 user-pro" action="#">
+					<form action="#" class="user">
+						<div class="input-box" >
+							<input type="text" placeholder="Search..." />
+							<span class="search">
+							  <i class="uil uil-search search-icon"></i>
+							</span>
+							<i class="uil uil-times close-icon"></i>
+						  </div>
+						<div >
+						<h4 style="color:black; font-size: 20px;">lịch sử đặt chổ</h4>
+						
+							<div class="row">
+								<div class="col-md-6 form-it">
+									<div class=img-ticket> 				<!-- ảnh vé xem phim -->
+										<a href="detailticket_light.html"> <img src="images/uploads/z5384775704191_afe8e24495759a9d068061b836663c47.jpg" alt="html" ></a>
+									</div>
+								</div >				
+								<div class="col-md-6 form-it">
+									<div class="iform-ticket">	<!-- thông tin vé xem phim -->
+									<h5 style="font-size: 30px;">Kung Fu Panda 4</h5>
+									 <p>TITAIN CINEMA</p>
+									<p><b>20:15-T7</b>,09/09</p>
+									<button><a href="detailticket_light.html">Xem thêm</a></button>
+								</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-6 form-it">
+									<div class=img-ticket> 				<!-- ảnh vé xem phim -->
+										<a href="detailticket_light.html"> <img src="images/uploads/z5384775704191_afe8e24495759a9d068061b836663c47.jpg" alt="html" ></a>
+									</div>
+								</div >				
+								<div class="col-md-6 form-it">
+									<div class="iform-ticket">	<!-- thông tin vé xem phim -->
+									<h5 style="font-size: 30px;">Kung Fu Panda 4</h5>
+									 <p>TITAIN CINEMA</p>
+									<p><b>20:15-T7</b>,09/09</p>
+									<button><a href="detailticket_light.html">Xem thêm</a></button>
+								</div>
+								</div>
+							</div>
 						</div>
-						<div class="rate-star">
-							<p>Rate This Movie:  </p>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star-outline"></i>
+						<ul class="pagination">
+							<li class="icon-prev"><a href="#"><i class="ion-ios-arrow-left"></i></a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">...</a></li>
+							<li><a href="#">21</a></li>
+							<li><a href="#">22</a></li>
+							<li class="icon-next"><a href="#"><i class="ion-ios-arrow-right"></i></a></li>
+						</ul>
 						</div>
-					</div>
-					<div class="movie-tabs">
-						<div class="tabs">
-							<ul class="tab-links tabs-mv">
-								<li class="active"><a href="#overview">Giới thiệu</a></li>
-								<li><a href="#reviews"> Nhận xét</a></li>
-							</ul>
-						    <div class="tab-content">
-						        <div id="overview" class="tab active">
-						            <div class="row">
-						            	<div class="col-md- col-sm-12 col-xs-12">			
-											<div class="title-hd-sm">
-												<h4>Tổng quan phim</h4>
-											</div>
-											<!-- movie user review -->
-											<div class="mv-user-review-item">
-												<h3>Best Marvel movie in my opinion</h3>
-												<div class="no-star">
-													<i class="ion-android-star"></i>
-													<i class="ion-android-star"></i>
-													<i class="ion-android-star"></i>
-													<i class="ion-android-star"></i>
-													<i class="ion-android-star"></i>
-													<i class="ion-android-star"></i>
-													<i class="ion-android-star"></i>
-													<i class="ion-android-star"></i>
-													<i class="ion-android-star"></i>
-													<i class="ion-android-star last"></i>
-												</div>
-											
-												<p>This is by far one of my favorite movies from the MCU. The introduction of new Characters both good and bad also makes the movie more exciting. giving the characters more of a back story can also help audiences relate more to different characters better, and it connects a bond between the audience and actors or characters. Having seen the movie three times does not bother me here as it is as thrilling and exciting every time I am watching it. In other words, the movie is by far better than previous movies (and I do love everything Marvel), the plotting is splendid (they really do out do themselves in each film, there are no problems watching it more than once.</p>
-											</div>
-						            	</div>
-						            
-						            </div>
-						        </div>
-						        <div id="reviews" class="tab review">
-						           <div class="row">
-						            	<div class="rv-hd">
-						            		<div class="div">
-							            		<h3 style="color: black;">Related Movies To</h3>
-													<div class="container">
-															<div class="col-md-9  col-xs-12">
-																<div class="blog-detail-ct">																																														
-																	<div class="comment-form">
-																		<h4>ĐỂ LẠI BÌNH LUẬN</h4>
-																		<form action="#">
-																			<div class="row">
-																				<div class="col-md-10">
-																					<textarea name="message" id="" placeholder="Message"></textarea>
-																				</div>
-																			</div>
-																			<input class="submit" type="submit" placeholder="submit">
-																		</form>
-																	</div>												
-																</div>
-															</div>		
-														</div>								
-													</div>						
-												</div>
-						            	</div>
-						            
-										<div class="mv-user-review-item">
-											<div class="user-infor">
-												<img src="images/uploads/userava1.jpg" alt="">
-												<div>
-													<h3>Best Marvel movie in my opinion</h3>
-													<div class="no-star">
-														<i class="ion-android-star"></i>
-														<i class="ion-android-star"></i>
-														<i class="ion-android-star"></i>
-														<i class="ion-android-star"></i>
-														<i class="ion-android-star"></i>
-														<i class="ion-android-star"></i>
-														<i class="ion-android-star"></i>
-														<i class="ion-android-star"></i>
-														<i class="ion-android-star"></i>
-														<i class="ion-android-star last"></i>
-													</div>
-													<p class="time">
-														17 December 2016 by <a href="#"> hawaiipierson</a>
-													</p>
-												</div>
-											</div>
-											<p>This is by far one of my favorite movies from the MCU. The introduction of new Characters both good and bad also makes the movie more exciting. giving the characters more of a back story can also help audiences relate more to different characters better, and it connects a bond between the audience and actors or characters. Having seen the movie three times does not bother me here as it is as thrilling and exciting every time I am watching it. In other words, the movie is by far better than previous movies (and I do love everything Marvel), the plotting is splendid (they really do out do themselves in each film, there are no problems watching it more than once.</p>
-										</div>
-										<ul class="pagination">
-											<li class="icon-prev"><a href="#"><i class="ion-ios-arrow-left"></i></a></li>
-											<li class="active"><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">4</a></li>
-											<li><a href="#">...</a></li>
-											<li><a href="#">21</a></li>
-											<li><a href="#">22</a></li>
-											<li class="icon-next"><a href="#"><i class="ion-ios-arrow-right"></i></a></li>
-										</ul>
-						            </div>
-						        </div>
-						    </div>
-						</div>
-					</div>
+						
+					</form>		
 				</div>
-			</div>
-		</div>
 	</div>
 </div>
 		</div>
@@ -421,6 +432,20 @@
 <script src="js/plugins2.js"></script>
 <script src="js/custom.js"></script>
 </body>
+<script>
+	let inputBox = document.querySelector('.input-box'),
+  searchIcon = document.querySelector('.search'),
+  closeIcon = document.querySelector('.close-icon');
 
-<!-- moviesingle_light16:30-->
+// ---- ---- Open Input ---- ---- //
+searchIcon.addEventListener('click', () => {
+  inputBox.classList.add('open');
+});
+// ---- ---- Close Input ---- ---- //
+closeIcon.addEventListener('click', () => {
+  inputBox.classList.remove('open');
+});
+
+</script>
+<!-- userprofile_light16:31-->
 </html>
